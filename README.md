@@ -57,9 +57,9 @@ This section focuses on different open addressing techniques:
 1. **Linear Probing**
    - Simple to implement; finds the next available slot but can cause primary clustering as the table fills.
 2. **Quadratic Probing**
-- Reduces primary clustering with quadratic jumps, though still vulnerable to secondary clustering.
+   - Reduces primary clustering with quadratic jumps, though still vulnerable to secondary clustering.
 3. **Double Hashing**
-Uses two hash functions to minimize clustering and increase probe sequence variety.
+   - Uses two hash functions to minimize clustering and increase probe sequence variety.
 
 ## Usage
 To use the algorithms, clone the repository and navigate to the desired algorithm's directory. Each algorithm Each algorithm a test that can be used to verify it.

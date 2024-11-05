@@ -6,13 +6,13 @@ This repository contains fragments of laboratory work focused on various algorit
 
 1. [Laboratory Work 1](src/Lab_1_SortingAndHeap)
    - Sorting Algorithms
-2. [Laboratory Work 2]()
+2. [Laboratory Work 2](src/Lab_2_HashingTechniques)
    - Hashing Techniques
 3. [Usage](#usage)
 4. [Contributing](#contributing)
 5. [License](#license)
 
-## Laboratory Work 1
+## [Laboratory Work 1](src/Lab_1_SortingAndHeap)
 This section contains implementations of several sorting algorithms:
 
 ### Sorting Algorithms
@@ -35,15 +35,17 @@ This section contains implementations of several sorting algorithms:
 8. **Counting Sort**
    - A non-comparison-based sorting algorithm that counts occurrences of each value.
 
-## Laboratory Work 2
+## [Laboratory Work 2](src/Lab_2_HashingTechniques)
 This section focuses on different hashing techniques:
 
 ### Hashing Techniques
-1. **HashListChaining**
+1. **BasicHashTableImplementation**
+   - BAsic implementation of a hash table   
+2. **HashListChaining**
    - Implementation of a hash table that uses chaining for collision resolution.
-2. **HashListChainingModularHashing**
+3. **HashListChainingModularHashing**
    - A modular approach to hash list chaining.
-3. **HashListChainingMultiplicativeHashing**
+4. **HashListChainingMultiplicativeHashing**
    - A multiplicative method for hash list chaining, improving distribution.
 
 ## Usage

@@ -28,5 +28,4 @@ public class HashListChainingMultiplicativeHashing<T extends Comparable<T>> exte
 
         return index;
     }
-
 }

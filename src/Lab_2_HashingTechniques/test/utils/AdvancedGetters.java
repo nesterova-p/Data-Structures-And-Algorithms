@@ -6,7 +6,6 @@ import Lab_2_HashingTechniques.implementation.services.HashTable;
 import java.lang.reflect.Field;
 
 public class AdvancedGetters {
-
     public static int getNumOfElems(HashTable hash) {
         String fieldNumOfElems = "nElem";
         try {

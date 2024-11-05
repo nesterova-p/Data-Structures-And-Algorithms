@@ -8,5 +8,4 @@ public class HashListChainingModularHashingTest extends GeneralHashListChainingT
     public HashListChainingModularHashingTest() {
         super(HashListChainingModularHashing.class);
     }
-
 }

@@ -42,7 +42,6 @@ public abstract class GeneralHashListChainingTest {
     public void should_ThrowException_WhenTryingGetNullValue() {
         // given
         String nullValue = null;
-
         // when & then
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             hashString.get(nullValue);

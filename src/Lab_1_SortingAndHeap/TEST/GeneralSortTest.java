@@ -7,7 +7,6 @@ import static org.junit.jupiter.api.Assertions.*;
 public abstract class GeneralSortTest<T extends Comparable<T>> {
 
     protected Sorting<T> sorter;
-
     public GeneralSortTest(Sorting<T> sorter) {
         this.sorter = sorter;
     }

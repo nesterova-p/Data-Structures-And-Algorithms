@@ -16,5 +16,4 @@ public class HashListChainingModularHashing<T extends Comparable<T>> extends Has
 
         return (hashCode & Integer.MAX_VALUE) % size;
     }
-
 }

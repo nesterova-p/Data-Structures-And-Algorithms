@@ -1,11 +1,8 @@
 import java.lang.reflect.Array;
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
+import Lab_1_SortingAndHeap.services.Sorting;
 import org.junit.Test;
-import pl.edu.pw.ee.aisd2024zex1.services.Sorting;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static Generators.createRandomData;
+import static org.junit.jupiter.api.Assertions.*;
 
 public abstract class GeneralSortTest<T extends Comparable<T>> {
 
@@ -16,7 +13,7 @@ public abstract class GeneralSortTest<T extends Comparable<T>> {
     }
 
     @Test
-    public void sortArray(){
+    public void sortArray() {
         // given
         T[] nums = (T[]) new Integer[]{5, 32, 50, 69, 18, 71, 47};
 
@@ -24,11 +21,11 @@ public abstract class GeneralSortTest<T extends Comparable<T>> {
         sorter.sort(nums);
 
         // then
-        assertThat(nums)
-                .isSorted();
+        assertTrue(isSorted(nums));
     }
 
-    public void sortOneElementArray(){
+    @Test
+    public void sortOneElementArray() {
         // given
         T[] nums = (T[]) new Integer[]{39};
 
@@ -36,11 +33,11 @@ public abstract class GeneralSortTest<T extends Comparable<T>> {
         sorter.sort(nums);
 
         // then
-        assertThat(nums)
-                .isSorted();
+        assertTrue(isSorted(nums));
     }
 
-    public void sortTwoElementArray(){
+    @Test
+    public void sortTwoElementArray() {
         // given
         T[] nums = (T[]) new Integer[]{3, 1};
 
@@ -48,12 +45,11 @@ public abstract class GeneralSortTest<T extends Comparable<T>> {
         sorter.sort(nums);
 
         // then
-        assertThat(nums)
-                .isSorted();
+        assertTrue(isSorted(nums));
     }
 
     @Test
-    public void sortThreeElementArray(){
+    public void sortThreeElementArray() {
         // given
         T[] nums = (T[]) new Integer[]{3, 1, 39};
 
@@ -61,24 +57,22 @@ public abstract class GeneralSortTest<T extends Comparable<T>> {
         sorter.sort(nums);
 
         // then
-        assertThat(nums)
-                .isSorted();
+        assertTrue(isSorted(nums));
     }
 
     @Test
     public void should_CorrectlyAscendingSort_When_InputIsRandomAndHuge() {
         // given
         int size = 10_000;
-        T[] nums = (T[]) createRandomData(size);
+        T[] nums = (T[]) Generators.createRandomData(size);
         T[] numsCopy = nums.clone();
 
         // when
         sorter.sort(nums);
 
         // then
-        assertThat(nums)
-                .isSorted()
-                .containsExactlyInAnyOrder(numsCopy);
+        assertTrue(isSorted(nums));
+        assertArrayEquals(numsCopy, nums);
     }
 
     @Test
@@ -90,7 +84,7 @@ public abstract class GeneralSortTest<T extends Comparable<T>> {
         sorter.sort(nums);
 
         // then
-        assertThat(nums).isEmpty();
+        assertEquals(0, nums.length);
     }
 
     @Test
@@ -98,32 +92,11 @@ public abstract class GeneralSortTest<T extends Comparable<T>> {
         // given
         T[] nums = null;
 
-        // when
-        Throwable exceptionCaught = catchThrowable(() -> {
-            sorter.sort(nums);
-        });
-
-        // then
-        String message = "Input args (data) cannot be null!";
-
-        assertThat(exceptionCaught)
-                .isInstanceOf(RuntimeException.class)
-                .hasMessage(message);
+        // when & then
+        Exception exception = assertThrows(RuntimeException.class, () -> sorter.sort(nums));
+        assertEquals("Input args (data) cannot be null!", exception.getMessage());
     }
-/*
-    @Test
-    public void should_CorrectlySort_When_SmallDataFromMyOwnExample() {
-        // given
-        T[] nums = (T[]) new Integer[]{2, 1, 9, 13, 8, 5};
 
-        // when
-        sorter.sort(nums);
-
-        // then
-        assertThat(nums)
-                .isSorted();
-    }
-*/
     @Test
     public void should_CorrectlySort_When_OnlyFirstIsWrong() {
         // given
@@ -133,8 +106,7 @@ public abstract class GeneralSortTest<T extends Comparable<T>> {
         sorter.sort(nums);
 
         // then
-        assertThat(nums)
-                .isSorted();
+        assertTrue(isSorted(nums));
     }
 
     @Test
@@ -146,8 +118,7 @@ public abstract class GeneralSortTest<T extends Comparable<T>> {
         sorter.sort(nums);
 
         // then
-        assertThat(nums)
-                .isSorted();
+        assertTrue(isSorted(nums));
     }
 
     @Test
@@ -159,8 +130,7 @@ public abstract class GeneralSortTest<T extends Comparable<T>> {
         sorter.sort(nums);
 
         // then
-        assertThat(nums).
-                isSorted();
+        assertTrue(isSorted(nums));
     }
 
     @Test
@@ -172,12 +142,11 @@ public abstract class GeneralSortTest<T extends Comparable<T>> {
         sorter.sort(nums);
 
         // then
-        assertThat(nums)
-                .isSorted();
+        assertTrue(isSorted(nums));
     }
 
     @Test
-    public void sortDuplicateOneValueArray(){
+    public void sortDuplicateOneValueArray() {
         // given
         T[] nums = (T[]) new Integer[]{9, 6, 4, 9, 5};
 
@@ -185,12 +154,11 @@ public abstract class GeneralSortTest<T extends Comparable<T>> {
         sorter.sort(nums);
 
         // then
-        assertThat(nums)
-                .isSorted();
+        assertTrue(isSorted(nums));
     }
 
     @Test
-    public void sortDuplicateValuesArray(){
+    public void sortDuplicateValuesArray() {
         // given
         T[] nums = (T[]) new Integer[]{3, 3, 3, 3, 3};
 
@@ -198,8 +166,15 @@ public abstract class GeneralSortTest<T extends Comparable<T>> {
         sorter.sort(nums);
 
         // then
-        assertThat(nums)
-                .isSorted();
+        assertTrue(isSorted(nums));
     }
 
+    private boolean isSorted(T[] array) {
+        for (int i = 0; i < array.length - 1; i++) {
+            if (array[i].compareTo(array[i + 1]) > 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 }

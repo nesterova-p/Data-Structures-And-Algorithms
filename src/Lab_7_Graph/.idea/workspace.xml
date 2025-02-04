@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b87d5708-efed-47b6-bbff-4881be40b8c7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/pw/ee/aisd2024zex7/shortestpaths/singlesource/bellmanford/MSTKruskal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/edu/pw/ee/aisd2024zex7/shortestpaths/singlesource/bellmanford/miasta.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2rKwIfLw9ONkg3Z1I7mD45jGMF2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MSTKruskal.executor": "Run",
+    "JUnit.BellmanFordPerformanceTest and 2 more.executor": "Run",
+    "JUnit.BellmanFordPerformanceTest.countEdgesInAllFiles.executor": "Run",
+    "JUnit.BellmanFordPerformanceTest.executor": "Run",
+    "JUnit.DijkstraV1PerformanceTest.executor": "Run",
+    "JUnit.DijkstraV2PerformanceTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/III semestr/AISD/Lab_7/2024Z_AISD_git_GR1_gr12/CW_7/AiSD2024ZEx7/src/main/java/pl/edu/pw/ee/aisd2024zex7/shortestpaths/singlesource/bellmanford",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\III semestr\AISD\Lab_7\2024Z_AISD_git_GR1_gr12\CW_7\AiSD2024ZEx7\src\main\java\pl\edu\pw\ee\aisd2024zex7\shortestpaths\singlesource\bellmanford" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MSTKruskal">
+    <configuration name="MSTKruskal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MSTKruskal" />
+      <module name="AiSD2024ZEx7" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BellmanFordPerformanceTest and 2 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AiSD2024ZEx7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edu.pw.ee.aisd2024zex7.performance.shortestpaths.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edu.pw.ee.aisd2024zex7.performance.shortestpaths" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.pw.ee.aisd2024zex7.performance.shortestpaths.ShortestPathsPerformanceTest" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="pl.edu.pw.ee.aisd2024zex7.performance.shortestpaths.BellmanFordPerformanceTest" />
+        <pattern testClass="pl.edu.pw.ee.aisd2024zex7.performance.shortestpaths.DijkstraV1PerformanceTest" />
+        <pattern testClass="pl.edu.pw.ee.aisd2024zex7.performance.shortestpaths.DijkstraV2PerformanceTest" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BellmanFordPerformanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AiSD2024ZEx7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edu.pw.ee.aisd2024zex7.performance.shortestpaths.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edu.pw.ee.aisd2024zex7.performance.shortestpaths" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.pw.ee.aisd2024zex7.performance.shortestpaths.BellmanFordPerformanceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DijkstraV1PerformanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AiSD2024ZEx7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edu.pw.ee.aisd2024zex7.performance.shortestpaths.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edu.pw.ee.aisd2024zex7.performance.shortestpaths" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.pw.ee.aisd2024zex7.performance.shortestpaths.DijkstraV1PerformanceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DijkstraV2PerformanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AiSD2024ZEx7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edu.pw.ee.aisd2024zex7.performance.shortestpaths.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.edu.pw.ee.aisd2024zex7.performance.shortestpaths" />
+      <option name="MAIN_CLASS_NAME" value="pl.edu.pw.ee.aisd2024zex7.performance.shortestpaths.DijkstraV2PerformanceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MSTKruskal" />
+        <item itemvalue="JUnit.BellmanFordPerformanceTest and 2 more" />
+        <item itemvalue="JUnit.DijkstraV2PerformanceTest" />
+        <item itemvalue="JUnit.DijkstraV1PerformanceTest" />
+        <item itemvalue="JUnit.BellmanFordPerformanceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b87d5708-efed-47b6-bbff-4881be40b8c7" name="Changes" comment="" />
+      <created>1736320997709</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736320997709</updated>
+      <workItem from="1736321001291" duration="540000" />
+      <workItem from="1736322520053" duration="3656000" />
+      <workItem from="1736694422744" duration="658000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

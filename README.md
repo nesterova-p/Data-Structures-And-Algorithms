@@ -4,15 +4,22 @@ This repository contains fragments of laboratory work focused on various algorit
 
 ## Table of Contents
 
-1. [Laboratory Work 1](src/Lab_1_SortingAndHeap)
-   - Sorting Algorithms
-2. [Laboratory Work 2](src/Lab_2_HashingTechniques)
-   - Hashing Techniques
-3. [Laboratory Work 3](src/Lab_3_OpenAddressingTechniques)
-   - Open Addressing
-3. [Usage](#usage)
-4. [Contributing](#contributing)
-5. [License](#license)
+1. [Laboratory Work 1](src/Lab_1_SortingAndHeap)  
+   - Sorting Algorithms  
+2. [Laboratory Work 2](src/Lab_2_HashingTechniques)  
+   - Hashing Techniques  
+3. [Laboratory Work 3](src/Lab_3_OpenAddressingTechniques)  
+   - Open Addressing  
+4. [Laboratory Work 4](src/Lab_4_RBT)  
+   - Red-Black Tree  
+5. [Laboratory Work 6](src/Lab_6_DynamicProgramming)  
+   - Dynamic Programming  
+6. [Laboratory Work 7](src/Lab_7_Graph)  
+   - Graph Algorithms  
+7. [Usage](#usage)  
+8. [Contributing](#contributing)  
+9. [License](#license)  
+
 
 ## [Laboratory Work 1](src/Lab_1_SortingAndHeap)
 This section contains implementations of several sorting algorithms:
@@ -60,6 +67,30 @@ This section focuses on different open addressing techniques:
    - Reduces primary clustering with quadratic jumps, though still vulnerable to secondary clustering.
 3. **Double Hashing**
    - Uses two hash functions to minimize clustering and increase probe sequence variety.
+
+## [Laboratory Work 4](src/Lab_4_RBT)
+This section focuses on **Red-Black Trees**, a type of self-balancing binary search tree.
+
+### Red-Black Tree
+- Ensures balanced tree height for efficient operations.
+- Guarantees **O(log n)** time complexity for insertion, deletion, and search.
+- Uses color properties (Red/Black) and rotations to maintain balance.
+
+## [Laboratory Work 6](src/Lab_6_DynamicProgramming)
+This section covers **Dynamic Programming (DP)**, a technique for solving optimization problems.
+
+### Dynamic Programming
+- Breaks problems into overlapping subproblems.
+- Uses memoization or tabulation to improve efficiency.
+
+## [Laboratory Work 7](src/Lab_7_Graph)
+This section focuses on **Graph Algorithms**, covering key traversal and pathfinding techniques.
+
+### Graph Algorithms
+- **Breadth-First Search (BFS)** and **Depth-First Search (DFS)** for graph traversal.
+- **Dijkstra's Algorithm** for shortest path in weighted graphs.
+- **Bellman-Ford Algorithm** for shortest paths with negative weights.
+- **Kruskal’s and Prim’s Algorithm** for Minimum Spanning Tree (MST).
 
 ## Usage
 To use the algorithms, clone the repository and navigate to the desired algorithm's directory. Each algorithm Each algorithm a test that can be used to verify it.
